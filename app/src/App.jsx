@@ -12,7 +12,7 @@ const systemMessage = { //  Explain things like you're talking to a software pro
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Ask me anything!",
+      message: "Hello, I'm AmazeBot! Ask me anything!",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -90,7 +90,7 @@ function App() {
           <ChatContainer>       
             <MessageList 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="AmazeBot is typing" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
